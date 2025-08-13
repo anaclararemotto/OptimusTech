@@ -3,6 +3,7 @@
 :root {
   --text-color: #667085;
   --main-color: #8E2424;
+  --main-transparent-color: #8E24240D;
   --secondary-color: #101828;
 }
 
@@ -102,7 +103,7 @@
 
 .metricas{
     display: flex;
-    padding: 0px 112px;
+    padding: 0px 112px 96px 112px;
     justify-content: space-between;
     gap: 32px;
 }
@@ -127,6 +128,41 @@
 
 .metricas__card__texto{
     font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color 96px 112px);
+}
+
+.vagas{
+    padding: 96px  112px 0px 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+}
+
+.vagas__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.vagas__conteudo__titulo{
+    padding: 4px 12px;
+    background-color: var(--main-transparent-color);
+    max-width: fit-content;
+    border-radius: 16px;
+    color: var(--main-color);
+}
+
+.vagas__conteudo__subtitulo{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.vagas__conteudo__texto{
+    font-size: 20px;
     font-weight: 400;
     color: var(--text-color);
 }
