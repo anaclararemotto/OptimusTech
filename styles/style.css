@@ -3,6 +3,7 @@
 :root {
   --text-color: #667085;
   --main-color: #8E2424;
+  --secondary-color: #101828;
 }
 
 *{
@@ -86,8 +87,9 @@
 }
 
 .sobre__subtitulo{
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
+    color: var(--secondary-color);
 }
 
 .sobre__texto{
@@ -96,4 +98,35 @@
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+}
+
+.metricas{
+    display: flex;
+    padding: 0px 112px;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.metricas__card{
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.metricas__card__titulo{
+    font-size: 72px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.metricas__card__subtitulo{
+    font-size: 28px;
+    color: var(--secondary-color);
+}
+
+.metricas__card__texto{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
 }
