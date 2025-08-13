@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+  --text-color: #667085;
+  --main-color: #8E2424;
+}
+
 *{
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
@@ -34,7 +39,7 @@
 
 .paginas__links{
     text-decoration: none;
-    color: #667085;
+    color: var(--text-color);
 }
 
 .botoes{
@@ -46,7 +51,7 @@
     padding: 10px 18px;
     background-color: transparent;
     border: none;
-    color: #667085;
+    color: var(--text-color);
 }
 
 .botoes__transparente:hover{
@@ -55,7 +60,7 @@
 
 .botoes__padrao{
     padding: 10px 18px;
-    background-color: #8E2424;
+    background-color: var(--main-color);
     border-radius: 8px;
     border: none;
     color: #FFFFFF;
@@ -63,4 +68,32 @@
 
 .botoes__padrao:hover{
     cursor: pointer;
+}
+
+.sobre{
+    padding: 107px 235px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__titulo{
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sobre__subtitulo{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.sobre__texto{
+    max-width: 791px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
 }
